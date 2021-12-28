@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ResearchProjectDef>
+    <defName>BB_BionicConversionCycle</defName>
+    <label>bionic conversion cycle</label>
+    <description>Replaces all body parts including missing ones with bionic counterparts.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Biosculpting</li>
+      <li>Bioregeneration</li>
+      <li>ArtificialMetabolism</li>
+      <li>NeuralComputation</li>
+      <li>FleshShaping</li>
+      <li>MolecularAnalysis</li>
+    </prerequisites>
+	<researchViewX>15.00</researchViewX>
+	<researchViewY>0.50</researchViewY>
+  </ResearchProjectDef>
+  
+
+  <ResearchProjectDef>
+    <defName>BB_ArchotechBioscultingResearch</defName>
+    <label>archotech conversion cycle</label>
+    <description>Replaces all body parts including missing ones with archotech counterparts.</description>
+    <baseCost>15000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>BB_BionicConversionCycle</li>
+    </prerequisites>
+	<researchViewX>16.00</researchViewX>
+	<researchViewY>0.50</researchViewY>
+  </ResearchProjectDef>
+</Defs>

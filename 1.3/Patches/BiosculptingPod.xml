@@ -1,0 +1,43 @@
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BiosculpterPod"]/comps</xpath>
+        <value>
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_ImplantConversionCycle">
+				<key>BionicConversionCycle</key>
+				<label>bionic conversion cycle</label>
+				<description>Replaces all body parts including missing ones with bionic counterparts.</description>
+				<implantName>bionic</implantName>
+				<iconPath>UI/Gizmos/BionicCycle</iconPath>
+				<durationDays>50</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BionicConversionCycle</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>10</MedicineUltratech>
+					<Neutroamine>15</Neutroamine>
+					<ComponentSpacer>20</ComponentSpacer>
+				</extraRequiredIngredients>
+			</li>
+			
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_ImplantConversionCycle">
+				<key>ArchotechConversionCycle</key>
+				<label>archotech conversion cycle</label>
+				<description>Replaces all body parts including missing ones with Archotech counterparts.</description>
+				<implantName>archotech</implantName>
+				<iconPath>UI/Gizmos/ArchotechCycle</iconPath>
+				<durationDays>70</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_ArchotechBioscultingResearch</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>20</MedicineUltratech>
+					<Neutroamine>25</Neutroamine>
+					<ComponentSpacer>50</ComponentSpacer>
+					<AIPersonaCore>1</AIPersonaCore>
+				</extraRequiredIngredients>
+			</li>
+        </value>
+    </Operation>
+</Patch>
