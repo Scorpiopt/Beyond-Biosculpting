@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompBiosculpterPod_BionicConversionCycle.cs" />
+    <Compile Include="BioUtility.cs" />
+    <Compile Include="CompBiosculpterPod_BioRegenerationCycle.cs" />
+    <Compile Include="CompBiosculpterPod_CompleteDetoxCycle.cs" />
+    <Compile Include="CompBiosculpterPod_ImplantConversionCycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

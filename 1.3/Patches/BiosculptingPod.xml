@@ -4,7 +4,7 @@
         <value>
 			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_ImplantConversionCycle">
 				<key>BionicConversionCycle</key>
-				<label>bionic conversion cycle</label>
+				<label>bionic conversion</label>
 				<description>Replaces all body parts including missing ones with bionic counterparts.</description>
 				<implantName>bionic</implantName>
 				<iconPath>UI/Gizmos/BionicCycle</iconPath>
@@ -18,11 +18,12 @@
 					<Neutroamine>15</Neutroamine>
 					<ComponentSpacer>20</ComponentSpacer>
 				</extraRequiredIngredients>
+				<cycleCompletedMessageKey>BB.BiosculpterBionicCompletedMessage</cycleCompletedMessageKey>
 			</li>
 			
 			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_ImplantConversionCycle">
 				<key>ArchotechConversionCycle</key>
-				<label>archotech conversion cycle</label>
+				<label>archotech conversion</label>
 				<description>Replaces all body parts including missing ones with Archotech counterparts.</description>
 				<implantName>archotech</implantName>
 				<iconPath>UI/Gizmos/ArchotechCycle</iconPath>
@@ -36,6 +37,42 @@
 					<Neutroamine>25</Neutroamine>
 					<ComponentSpacer>50</ComponentSpacer>
 					<AIPersonaCore>1</AIPersonaCore>
+				</extraRequiredIngredients>
+				<cycleCompletedMessageKey>BB.BiosculpterArchotechCompletedMessage</cycleCompletedMessageKey>
+			</li>
+			
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_CompleteDetoxCycle">
+				<key>CompleteDetoxCycle</key>
+				<label>complete detox</label>
+				<description>Clears all addictions and any poisonous/toxic health effects.</description>
+				<iconPath>UI/Gizmos/CompleteDetoxCycle</iconPath>
+				<durationDays>15</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BodyHealingCycles</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>10</MedicineUltratech>
+					<Neutroamine>10</Neutroamine>
+					<PsychoidLeaves>20</PsychoidLeaves>
+				</extraRequiredIngredients>
+			</li>
+
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_BioRegenerationCycle">
+				<key>BioRegenerationCycle</key>
+				<label>bio regeneration</label>
+				<description>Clears all bad health effects and regrows any missing limbs.</description>
+				<iconPath>UI/Gizmos/BioRegenerationCycle</iconPath>
+				<durationDays>30</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BodyHealingCycles</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>20</MedicineUltratech>
+					<Neutroamine>20</Neutroamine>
+					<ComponentSpacer>10</ComponentSpacer>
+					<Luciferium>5</Luciferium>
 				</extraRequiredIngredients>
 			</li>
         </value>

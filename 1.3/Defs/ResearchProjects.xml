@@ -1,7 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
+  <ResearchProjectDef>
+    <defName>BB_BodyHealingCycles</defName>
+    <label>body healing cycles</label>
+    <description>Cures all bad diseases.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>Biosculpting</li>
+      <li>Bioregeneration</li>
+      <li>ArtificialMetabolism</li>
+      <li>NeuralComputation</li>
+      <li>FleshShaping</li>
+      <li>MolecularAnalysis</li>
+    </prerequisites>
+	<researchViewX>15.00</researchViewX>
+	<researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+  
   <ResearchProjectDef>
     <defName>BB_BionicConversionCycle</defName>
     <label>bionic conversion cycle</label>

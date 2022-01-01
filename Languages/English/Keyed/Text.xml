@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BB.BiosculpterBionicCompletedMessage>{PAWN_labelShort}'s bionic conversion cycle is complete.</BB.BiosculpterBionicCompletedMessage>
+  <BB.BiosculpterArchotechCompletedMessage>{PAWN_labelShort}'s archotech conversion cycle is complete.</BB.BiosculpterArchotechCompletedMessage>
+  <BB.BiosculpterDetoxCompletedMessage>{PAWN_labelShort}'s detox cycle is complete.</BB.BiosculpterDetoxCompletedMessage>
+  <BB.BiosculpterBioRegenerationCompletedMessage>{PAWN_labelShort}'s bio regeneration cycle is complete.</BB.BiosculpterBioRegenerationCompletedMessage>
+
+</LanguageData>

@@ -8,6 +8,7 @@ namespace BeyondBiosculpting
     public class CompProperties_BiosculpterPod_ImplantConversionCycle : CompProperties_BiosculpterPod_BaseCycle
 	{
         public string implantName;
+        public string cycleCompletedMessageKey;
         public CompProperties_BiosculpterPod_ImplantConversionCycle()
         {
             this.compClass = typeof(CompBiosculpterPod_ImplantConversionCycle);
@@ -25,20 +26,15 @@ namespace BeyondBiosculpting
                 {
                     foreach (var partDef in implant.appliedOnFixedBodyParts)
                     {
-                        var parts = pawn.RaceProps.body.GetPartsWithDef(partDef);
-
-                        if (parts != null)
+                        foreach (var part in pawn.RaceProps.body.GetPartsWithDef(partDef))
                         {
-                            foreach (var part in parts)
+                            if (!pawn.health.hediffSet.PartIsMissing(part))
                             {
-                                if (!pawn.health.hediffSet.PartIsMissing(part))
+                                var newHediff = HediffMaker.MakeHediff(implant.addsHediff, pawn);
+                                pawn.health.AddHediff(newHediff, part);
+                                if (newHediff is Hediff_Level withLevel)
                                 {
-                                    var newHediff = HediffMaker.MakeHediff(implant.addsHediff, pawn);
-                                    pawn.health.AddHediff(newHediff, part);
-                                    if (newHediff is Hediff_Level withLevel)
-                                    {
-                                        withLevel.SetLevelTo((int)withLevel.def.maxSeverity);
-                                    }
+                                    withLevel.SetLevelTo((int)withLevel.def.maxSeverity);
                                 }
                             }
                         }
@@ -54,8 +50,7 @@ namespace BeyondBiosculpting
                     }
                 }
             }
-
-            Messages.Message("BiosculpterPleasureCompletedMessage".Translate(pawn.Named("PAWN")), pawn, MessageTypeDefOf.PositiveEvent);
+            Messages.Message(Props.cycleCompletedMessageKey.Translate(pawn.Named("PAWN")), pawn, MessageTypeDefOf.PositiveEvent);
 		}
 	}
 }
