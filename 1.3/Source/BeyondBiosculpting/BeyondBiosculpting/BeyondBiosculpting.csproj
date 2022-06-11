@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeyondBiosculptingStartup.cs" />
     <Compile Include="BioUtility.cs" />
     <Compile Include="CompBiosculpterPod_BioRegenerationCycle.cs" />
+    <Compile Include="CompBiosculpterPod_IndoctrinationCycle.cs" />
     <Compile Include="CompBiosculpterPod_CompleteDetoxCycle.cs" />
     <Compile Include="CompBiosculpterPod_ImplantConversionCycle.cs" />
+    <Compile Include="HotSwappableAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TraitEntry.cs" />
+    <Compile Include="Window_ChangePersonality.cs" />
+    <Compile Include="Window_SelectItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

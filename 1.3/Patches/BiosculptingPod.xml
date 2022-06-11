@@ -14,9 +14,9 @@
 					<li>BB_BionicConversionCycle</li>
 				</requiredResearch>
 				<extraRequiredIngredients>
-					<MedicineUltratech>10</MedicineUltratech>
+					<MedicineUltratech>5</MedicineUltratech>
 					<Neutroamine>15</Neutroamine>
-					<ComponentSpacer>20</ComponentSpacer>
+					<ComponentSpacer>3</ComponentSpacer>
 				</extraRequiredIngredients>
 				<cycleCompletedMessageKey>BB.BiosculpterBionicCompletedMessage</cycleCompletedMessageKey>
 			</li>
@@ -33,9 +33,9 @@
 					<li>BB_ArchotechBioscultingResearch</li>
 				</requiredResearch>
 				<extraRequiredIngredients>
-					<MedicineUltratech>20</MedicineUltratech>
+					<MedicineUltratech>5</MedicineUltratech>
 					<Neutroamine>25</Neutroamine>
-					<ComponentSpacer>50</ComponentSpacer>
+					<ComponentSpacer>3</ComponentSpacer>
 					<AIPersonaCore>1</AIPersonaCore>
 				</extraRequiredIngredients>
 				<cycleCompletedMessageKey>BB.BiosculpterArchotechCompletedMessage</cycleCompletedMessageKey>
@@ -52,7 +52,7 @@
 					<li>BB_BodyHealingCycles</li>
 				</requiredResearch>
 				<extraRequiredIngredients>
-					<MedicineUltratech>10</MedicineUltratech>
+					<MedicineUltratech>5</MedicineUltratech>
 					<Neutroamine>10</Neutroamine>
 					<PsychoidLeaves>20</PsychoidLeaves>
 				</extraRequiredIngredients>
@@ -60,7 +60,7 @@
 
 			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_BioRegenerationCycle">
 				<key>BioRegenerationCycle</key>
-				<label>bio regeneration</label>
+				<label>advanced bio regeneration</label>
 				<description>Clears all bad health effects and regrows any missing limbs.</description>
 				<iconPath>UI/Gizmos/BioRegenerationCycle</iconPath>
 				<durationDays>30</durationDays>
@@ -69,10 +69,27 @@
 					<li>BB_BodyHealingCycles</li>
 				</requiredResearch>
 				<extraRequiredIngredients>
-					<MedicineUltratech>20</MedicineUltratech>
+					<MedicineUltratech>5</MedicineUltratech>
 					<Neutroamine>20</Neutroamine>
-					<ComponentSpacer>10</ComponentSpacer>
-					<Luciferium>5</Luciferium>
+					<ComponentSpacer>3</ComponentSpacer>
+					<Luciferium>1</Luciferium>
+				</extraRequiredIngredients>
+			</li>
+			
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_IndoctrinationCycle">
+				<key>IndoctrinationCycle</key>
+				<label>Indoctrination</label>
+				<description>A mind reprograming cycle used in Glitterworlds to help integrate problematic citizens into society.</description>
+				<iconPath>UI/Gizmos/IndoctrinationCycle</iconPath>
+				<durationDays>15</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BodyHealingCycles</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>2</MedicineUltratech>
+					<Neutroamine>15</Neutroamine>
+					<PsychoidLeaves>10</PsychoidLeaves>
 				</extraRequiredIngredients>
 			</li>
         </value>

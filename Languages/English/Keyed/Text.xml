@@ -5,5 +5,11 @@
   <BB.BiosculpterArchotechCompletedMessage>{PAWN_labelShort}'s archotech conversion cycle is complete.</BB.BiosculpterArchotechCompletedMessage>
   <BB.BiosculpterDetoxCompletedMessage>{PAWN_labelShort}'s detox cycle is complete.</BB.BiosculpterDetoxCompletedMessage>
   <BB.BiosculpterBioRegenerationCompletedMessage>{PAWN_labelShort}'s bio regeneration cycle is complete.</BB.BiosculpterBioRegenerationCompletedMessage>
-
+  <BB.BiosculpterIndoctrinationCompletedMessage>{PAWN_labelShort}'s indoctrination cycle is complete.</BB.BiosculpterIndoctrinationCompletedMessage>
+	<BB.StartIndoctrination>Start indoctrination</BB.StartIndoctrination>
+	<BB.TraitReplacer>Trait replacer</BB.TraitReplacer>
+	<BB.Search>Search</BB.Search>
+	<BB.Select>Select</BB.Select>
+	<BB.SelectTraitToRemove>Select trait to remove</BB.SelectTraitToRemove>
+	<BB.SelectTraitToAdd>Select trait to add</BB.SelectTraitToAdd>
 </LanguageData>
