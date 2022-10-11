@@ -12,4 +12,5 @@
 	<BB.Select>Select</BB.Select>
 	<BB.SelectTraitToRemove>Select trait to remove</BB.SelectTraitToRemove>
 	<BB.SelectTraitToAdd>Select trait to add</BB.SelectTraitToAdd>
+	<BB.MustHaveOneTrait>Must have at least one trait.</BB.MustHaveOneTrait>
 </LanguageData>
