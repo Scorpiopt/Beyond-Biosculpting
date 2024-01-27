@@ -20,7 +20,8 @@ namespace BeyondBiosculpting
         public override void CycleCompleted(Pawn pawn)
 		{
             Dictionary<BodyPartRecord, List<HediffDef>> hediffsToAdd = new Dictionary<BodyPartRecord, List<HediffDef>>();
-            foreach (var implant in DefDatabase<RecipeDef>.AllDefs.Where(x => x.addsHediff != null && x.addsHediff.defName.ToLower().Contains(Props.implantName)))
+	    string bionicmodnames = (Props.implantName == "bionic") ? "synthetic" : "NothingToSeeHere";
+            foreach (var implant in DefDatabase<RecipeDef>.AllDefs.Where(x => x.addsHediff != null && (x.addsHediff.defName.ToLower().Contains(Props.implantName) || x.addsHediff.defName.ToLower().Contains(bionicmodnames)) && !x.addsHediff.defName.ToLower().Contains("animal")))
             {
                 if (implant.appliedOnFixedBodyParts != null)
                 {
