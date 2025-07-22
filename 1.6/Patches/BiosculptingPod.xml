@@ -1,0 +1,97 @@
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BiosculpterPod"]/comps</xpath>
+        <value>
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_ImplantConversionCycle">
+				<key>BionicConversionCycle</key>
+				<label>bionic conversion</label>
+				<description>Replaces all body parts including missing ones with bionic counterparts.</description>
+				<implantName>bionic</implantName>
+				<iconPath>UI/Gizmos/BionicCycle</iconPath>
+				<durationDays>50</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BionicConversionCycle</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>5</MedicineUltratech>
+					<Neutroamine>15</Neutroamine>
+					<ComponentSpacer>3</ComponentSpacer>
+				</extraRequiredIngredients>
+				<cycleCompletedMessageKey>BB.BiosculpterBionicCompletedMessage</cycleCompletedMessageKey>
+			</li>
+			
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_ImplantConversionCycle">
+				<key>ArchotechConversionCycle</key>
+				<label>archotech conversion</label>
+				<description>Replaces all body parts including missing ones with Archotech counterparts.</description>
+				<implantName>archotech</implantName>
+				<iconPath>UI/Gizmos/ArchotechCycle</iconPath>
+				<durationDays>70</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_ArchotechBioscultingResearch</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>5</MedicineUltratech>
+					<Neutroamine>25</Neutroamine>
+					<ComponentSpacer>3</ComponentSpacer>
+					<AIPersonaCore>1</AIPersonaCore>
+				</extraRequiredIngredients>
+				<cycleCompletedMessageKey>BB.BiosculpterArchotechCompletedMessage</cycleCompletedMessageKey>
+			</li>
+			
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_CompleteDetoxCycle">
+				<key>CompleteDetoxCycle</key>
+				<label>complete detox</label>
+				<description>Clears all addictions and any poisonous/toxic health effects.</description>
+				<iconPath>UI/Gizmos/CompleteDetoxCycle</iconPath>
+				<durationDays>15</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BodyHealingCycles</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>5</MedicineUltratech>
+					<Neutroamine>10</Neutroamine>
+					<PsychoidLeaves>20</PsychoidLeaves>
+				</extraRequiredIngredients>
+			</li>
+
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_BioRegenerationCycle">
+				<key>BioRegenerationCycle</key>
+				<label>advanced bio regeneration</label>
+				<description>Clears all bad health effects and regrows any missing limbs.</description>
+				<iconPath>UI/Gizmos/BioRegenerationCycle</iconPath>
+				<durationDays>30</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BodyHealingCycles</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>5</MedicineUltratech>
+					<Neutroamine>20</Neutroamine>
+					<ComponentSpacer>3</ComponentSpacer>
+					<Luciferium>1</Luciferium>
+				</extraRequiredIngredients>
+			</li>
+			
+			<li Class="BeyondBiosculpting.CompProperties_BiosculpterPod_IndoctrinationCycle">
+				<key>IndoctrinationCycle</key>
+				<label>Indoctrination</label>
+				<description>A mind reprograming cycle used in Glitterworlds to help integrate problematic citizens into society.</description>
+				<iconPath>UI/Gizmos/IndoctrinationCycle</iconPath>
+				<durationDays>15</durationDays>
+				<operatingColor>(1.000,0.918,0.000)</operatingColor>
+				<requiredResearch>
+					<li>BB_BodyHealingCycles</li>
+				</requiredResearch>
+				<extraRequiredIngredients>
+					<MedicineUltratech>2</MedicineUltratech>
+					<Neutroamine>15</Neutroamine>
+					<PsychoidLeaves>10</PsychoidLeaves>
+				</extraRequiredIngredients>
+			</li>
+        </value>
+    </Operation>
+</Patch>
